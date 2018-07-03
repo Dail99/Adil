@@ -77,6 +77,7 @@ namespace WindowsFormsApplication1
             double secondValue = Convert.ToDouble(secondValueText);
             ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue, secondValue);
+            textBox2.Text = result.ToString();
 
             /*  switch (((Button)sender).Name)
               {
