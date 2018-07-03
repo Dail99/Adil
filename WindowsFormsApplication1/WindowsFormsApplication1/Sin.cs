@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    public interface OneArgumentCalculator
+    public class Sin : OneArgumentCalculator
     {
-        double Calculate(double thirdValue);
+        public double Calculate(double thirdArgument)
+        {
+            return Math.Sin(thirdArgument);
+        }
     }
 }

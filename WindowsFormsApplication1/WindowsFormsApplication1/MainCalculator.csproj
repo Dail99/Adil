@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsFormsApplication1</RootNamespace>
     <AssemblyName>WindowsFormsApplication1</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,9 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cos.cs" />
+    <Compile Include="Degree.cs" />
+    <Compile Include="DegreeFraction.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="OneArgumentCalculator.cs" />
     <Compile Include="OneArgumentFactory.cs" />
     <Compile Include="radical.cs" />
+    <Compile Include="Sin.cs" />
+    <Compile Include="Tan.cs" />
     <Compile Include="TwoTwoArgumentsFactory.cs" />
     <Compile Include="Div.cs" />
     <Compile Include="Form1.cs">
@@ -74,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

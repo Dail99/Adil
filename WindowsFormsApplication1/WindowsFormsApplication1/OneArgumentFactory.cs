@@ -13,6 +13,9 @@ namespace WindowsFormsApplication1
             switch (calculatorname)
             {
                 case "radical": return new Radical();
+                case "ButtonSin": return new Sin();
+                case "ButtonCos": return new Cos();
+                case "ButtonTan": return new Tan();
                 default:
                     throw new Exception("Неизвестная операция");
             }

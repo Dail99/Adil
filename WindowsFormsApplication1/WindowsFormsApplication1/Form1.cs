@@ -43,13 +43,13 @@ namespace WindowsFormsApplication1
             textBox2.Text = result.ToString();
         }
 
-        private void radical_Click(object sender, EventArgs e)
+        private void ClickMainOne(object sender, EventArgs e)
         {
-            string radicalValueText = textBox4.Text;
-            double radicalValue = Convert.ToDouble(radicalValueText);
+            string thirdValueText = textBox4.Text;
+            double thirdValue = Convert.ToDouble(thirdValueText);
             OneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-            double radicalResult = calculator.Calculate(radicalValue);
-            textBox4.Text = radicalResult.ToString();
+            double thirdValueResult = calculator.Calculate(thirdValue);
+            textBox4.Text = thirdValueResult.ToString();
 
         }
     }
