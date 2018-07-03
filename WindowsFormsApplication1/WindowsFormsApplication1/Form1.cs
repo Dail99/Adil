@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         {
 
         }
-
+/*
         private void sum()
         {
             double firstCase = Convert.ToDouble(textBox1.Text);
@@ -67,29 +67,36 @@ namespace WindowsFormsApplication1
             textBox3.Text = secondCase.ToString();
             double thirdCase = firstCase * secondCase;
             textBox2.Text = Convert.ToString(thirdCase);
-        }
+        }*/
 
         private void ClickMain(object sender, EventArgs e)
         {
-            switch (((Button)sender).Name)
-            {
-                case "ButtonPlus":
-                    sum();
-                    break;
-                case "ButtonMin":
-                    min();
-                    break;
-                case "ButtonDel":
-                    del();
-                    break;
-                case "ButtonUmn":
-                    umn();
-                    break;
-	
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            string firstValueText = textBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string secondValueText = textBox3.Text;
+            double secondValue = Convert.ToDouble(secondValueText);
+            ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue, secondValue);
 
+            /*  switch (((Button)sender).Name)
+              {
+                  case "ButtonPlus":
+                      sum();
+                      break;
+                  case "ButtonMin":
+                      min();
+                      break;
+                  case "ButtonDel":
+                      del();
+                      break;
+                  case "ButtonUmn":
+                      umn();
+                      break;
+
+                  default:
+                      throw new Exception("Неизвестная операция");*/
         }
+
     }
+    
 }
