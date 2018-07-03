@@ -31,44 +31,7 @@ namespace WindowsFormsApplication1
         {
 
         }
-/*
-        private void sum()
-        {
-            double firstCase = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = firstCase.ToString();
-            double secondCase = Convert.ToDouble(textBox3.Text);
-            textBox3.Text = secondCase.ToString();
-            double thirdCase = firstCase + secondCase;
-            textBox2.Text = Convert.ToString(thirdCase);
-        }
-        private void min()
-        {
-            double firstCase = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = firstCase.ToString();
-            double secondCase = Convert.ToDouble(textBox3.Text);
-            textBox3.Text = secondCase.ToString();
-            double thirdCase = firstCase - secondCase;
-            textBox2.Text = Convert.ToString(thirdCase);
-        }
-        private void del()
-        {
-            double firstCase = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = firstCase.ToString();
-            double secondCase = Convert.ToDouble(textBox3.Text);
-            textBox3.Text = secondCase.ToString();
-            double thirdCase = firstCase / secondCase;
-            textBox2.Text = Convert.ToString(thirdCase);
-        }
-        private void umn()
-        {
-            double firstCase = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = firstCase.ToString();
-            double secondCase = Convert.ToDouble(textBox3.Text);
-            textBox3.Text = secondCase.ToString();
-            double thirdCase = firstCase * secondCase;
-            textBox2.Text = Convert.ToString(thirdCase);
-        }*/
-
+  
         private void ClickMain(object sender, EventArgs e)
         {
             string firstValueText = textBox1.Text;
@@ -78,26 +41,17 @@ namespace WindowsFormsApplication1
             ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue, secondValue);
             textBox2.Text = result.ToString();
-
-            /*  switch (((Button)sender).Name)
-              {
-                  case "ButtonPlus":
-                      sum();
-                      break;
-                  case "ButtonMin":
-                      min();
-                      break;
-                  case "ButtonDel":
-                      del();
-                      break;
-                  case "ButtonUmn":
-                      umn();
-                      break;
-
-                  default:
-                      throw new Exception("Неизвестная операция");*/
         }
 
+        private void radical_Click(object sender, EventArgs e)
+        {
+            string radicalValueText = textBox4.Text;
+            double radicalValue = Convert.ToDouble(radicalValueText);
+            OneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            double radicalResult = calculator.Calculate(radicalValue);
+            textBox4.Text = radicalResult.ToString();
+
+        }
     }
     
 }

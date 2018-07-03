@@ -35,11 +35,13 @@
             this.ButtonDel = new System.Windows.Forms.Button();
             this.ButtonUmn = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.radical = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 27);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
@@ -47,14 +49,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(41, 77);
+            this.textBox2.Location = new System.Drawing.Point(76, 56);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
             // 
             // ButtonPlus
             // 
-            this.ButtonPlus.Location = new System.Drawing.Point(307, 98);
+            this.ButtonPlus.Location = new System.Drawing.Point(309, 27);
             this.ButtonPlus.Name = "ButtonPlus";
             this.ButtonPlus.Size = new System.Drawing.Size(75, 23);
             this.ButtonPlus.TabIndex = 7;
@@ -63,7 +65,7 @@
             // 
             // ButtonMin
             // 
-            this.ButtonMin.Location = new System.Drawing.Point(184, 166);
+            this.ButtonMin.Location = new System.Drawing.Point(309, 114);
             this.ButtonMin.Name = "ButtonMin";
             this.ButtonMin.Size = new System.Drawing.Size(75, 23);
             this.ButtonMin.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             // ButtonDel
             // 
-            this.ButtonDel.Location = new System.Drawing.Point(277, 147);
+            this.ButtonDel.Location = new System.Drawing.Point(309, 85);
             this.ButtonDel.Name = "ButtonDel";
             this.ButtonDel.Size = new System.Drawing.Size(75, 23);
             this.ButtonDel.TabIndex = 4;
@@ -83,7 +85,7 @@
             // 
             // ButtonUmn
             // 
-            this.ButtonUmn.Location = new System.Drawing.Point(52, 147);
+            this.ButtonUmn.Location = new System.Drawing.Point(309, 56);
             this.ButtonUmn.Name = "ButtonUmn";
             this.ButtonUmn.Size = new System.Drawing.Size(75, 23);
             this.ButtonUmn.TabIndex = 5;
@@ -93,16 +95,35 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(135, 27);
+            this.textBox3.Location = new System.Drawing.Point(138, 12);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
+            // 
+            // radical
+            // 
+            this.radical.Location = new System.Drawing.Point(153, 171);
+            this.radical.Name = "radical";
+            this.radical.Size = new System.Drawing.Size(75, 23);
+            this.radical.TabIndex = 8;
+            this.radical.Text = "Sqrt";
+            this.radical.UseVisualStyleBackColor = true;
+            this.radical.Click += new System.EventHandler(this.radical_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(27, 174);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 386);
+            this.ClientSize = new System.Drawing.Size(422, 220);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.radical);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.ButtonUmn);
             this.Controls.Add(this.ButtonDel);
@@ -127,6 +148,8 @@
         private System.Windows.Forms.Button ButtonDel;
         private System.Windows.Forms.Button ButtonUmn;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button radical;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 

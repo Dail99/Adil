@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentCalculator.cs" />
+    <Compile Include="OneArgumentFactory.cs" />
+    <Compile Include="radical.cs" />
     <Compile Include="TwoTwoArgumentsFactory.cs" />
     <Compile Include="Div.cs" />
     <Compile Include="Form1.cs">
