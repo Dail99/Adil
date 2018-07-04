@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FactoryTest\FactoryTwoArgTest.cs" />
     <Compile Include="OneArgumentTest\Degree.cs" />
     <Compile Include="TwoArgumentTest\multiTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
