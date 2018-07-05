@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
-using MainCalculator.TwoArgument.TwoTwoArgumentsFactory;    
-using SelectListItem = System.Web.WebPages.Html.SelectListItem;
+using MainCalculator;
 
-namespace WebApplication.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,19 +15,19 @@ namespace WebApplication.Controllers
             {
                 new SelectListItem()
                 {
-                    Value = "Multi", Text ="Multi"
+                    Value = "multiSolution", Text ="Multi"
                 },
                 new SelectListItem()
                 {
-                    Value = "Plus", Text ="Plus"
+                    Value = "plusSolution", Text ="Plus"
                 },
                 new SelectListItem()
                 {
-                    Value = "Minus", Text ="Minus"
+                    Value = "minSolution", Text ="Minus"
                 },
                 new SelectListItem()
                 {
-                    Value = "Div", Text ="Div"
+                    Value = "delSolution", Text ="Div"
                 }
             };
             return View();
@@ -46,28 +48,28 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(double firstValue, double secondValue, string operation)
+        public ActionResult Index(double firstArgument, double secondArgument, string operation)
         {
             ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(operation);
-            double result = calculator.Calculate(firstValue, secondValue);
+            double result = calculator.Calculate(firstArgument, secondArgument);
             ViewBag.Result = result;
             ViewBag.Operation = new SelectListItem[]
             {
                 new SelectListItem()
                 {
-                    Value = "Multi", Text ="Multi"
+                    Value = "multiSolution", Text ="Multi"
                 },
                 new SelectListItem()
                 {
-                    Value = "Plus", Text ="Plus"
+                    Value = "plusSolution", Text ="Plus"
                 },
                 new SelectListItem()
                 {
-                    Value = "Minus", Text ="Minus"
+                    Value = "minSolution", Text ="Minus"
                 },
                 new SelectListItem()
                 {
-                    Value = "Div", Text ="Div"
+                    Value = "delSolution", Text ="Div"
                 }
             };
             return View();
