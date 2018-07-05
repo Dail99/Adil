@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MainCalculator.Properties {
+namespace WindowsFormsApplication1.Properties {
     using System;
     
     
