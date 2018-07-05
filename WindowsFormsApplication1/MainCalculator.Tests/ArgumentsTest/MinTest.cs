@@ -1,0 +1,20 @@
+﻿
+using NUnit.Framework;
+
+namespace MainCalculator.Tests.ArgumentsTest
+{
+    [TestFixture]
+    public class MinTest
+    {
+        [TestCase(7, 0, 7)]
+        [TestCase(5, 4, 1)]
+        [TestCase(6, 4, 2)]
+        public void CalculateMinTestStrong(double firstValue, double secondValue, double expected)
+        {
+            ITwoArgumentCalculator calculator = new Minus();
+            double result = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
+
+        }
+    }
+}

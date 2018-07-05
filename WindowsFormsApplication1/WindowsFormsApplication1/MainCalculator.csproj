@@ -47,27 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cos.cs" />
-    <Compile Include="Degree.cs" />
-    <Compile Include="DegreeFraction.cs" />
-    <Compile Include="Log.cs" />
-    <Compile Include="OneArgumentCalculator.cs" />
-    <Compile Include="OneArgumentFactory.cs" />
-    <Compile Include="radical.cs" />
-    <Compile Include="Sin.cs" />
-    <Compile Include="Tan.cs" />
-    <Compile Include="TwoTwoArgumentsFactory.cs" />
-    <Compile Include="Div.cs" />
+    <Compile Include="OneArgument\Cos.cs" />
+    <Compile Include="TwoArgument\Degree.cs" />
+    <Compile Include="TwoArgument\DegreeFraction.cs" />
+    <Compile Include="TwoArgument\Log.cs" />
+    <Compile Include="OneArgument\OneArgumentCalculator.cs" />
+    <Compile Include="OneArgument\OneArgumentFactory.cs" />
+    <Compile Include="OneArgument\radical.cs" />
+    <Compile Include="OneArgument\Sin.cs" />
+    <Compile Include="OneArgument\Tan.cs" />
+    <Compile Include="TwoArgument\TwoTwoArgumentsFactory.cs" />
+    <Compile Include="TwoArgument\Div.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ITwoArgumentCalculator.cs" />
-    <Compile Include="Minus.cs" />
-    <Compile Include="Multi.cs" />
-    <Compile Include="Plus.cs" />
+    <Compile Include="TwoArgument\ITwoArgumentCalculator.cs" />
+    <Compile Include="TwoArgument\Minus.cs" />
+    <Compile Include="TwoArgument\Multi.cs" />
+    <Compile Include="TwoArgument\Plus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -96,6 +96,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

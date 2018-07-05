@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace MainCalculator
 {
     partial class Form1
     {
@@ -30,91 +30,90 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ButtonPlus = new System.Windows.Forms.Button();
-            this.ButtonMin = new System.Windows.Forms.Button();
-            this.ButtonDel = new System.Windows.Forms.Button();
-            this.ButtonUmn = new System.Windows.Forms.Button();
+            this.plusSolution = new System.Windows.Forms.Button();
+            this.minSolution = new System.Windows.Forms.Button();
+            this.delSolution = new System.Windows.Forms.Button();
+            this.multiSolution = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.radical = new System.Windows.Forms.Button();
+            this.radicalSolution = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.ButtonDegree = new System.Windows.Forms.Button();
-            this.ButtonDegreeFraction = new System.Windows.Forms.Button();
-            this.ButtonLog = new System.Windows.Forms.Button();
-            this.ButtonSin = new System.Windows.Forms.Button();
-            this.ButtonCos = new System.Windows.Forms.Button();
-            this.ButtonTan = new System.Windows.Forms.Button();
+            this.degreeSolution = new System.Windows.Forms.Button();
+            this.degreeFraction = new System.Windows.Forms.Button();
+            this.logSolution = new System.Windows.Forms.Button();
+            this.sinSolution = new System.Windows.Forms.Button();
+            this.cosSolution = new System.Windows.Forms.Button();
+            this.tanSolution = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Location = new System.Drawing.Point(12, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(76, 56);
+            this.textBox2.Location = new System.Drawing.Point(84, 88);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
             // 
-            // ButtonPlus
+            // plusSolution
             // 
-            this.ButtonPlus.Location = new System.Drawing.Point(309, 27);
-            this.ButtonPlus.Name = "ButtonPlus";
-            this.ButtonPlus.Size = new System.Drawing.Size(75, 23);
-            this.ButtonPlus.TabIndex = 7;
-            this.ButtonPlus.Text = "+";
-            this.ButtonPlus.Click += new System.EventHandler(this.ClickMain);
+            this.plusSolution.Location = new System.Drawing.Point(276, 27);
+            this.plusSolution.Name = "plusSolution";
+            this.plusSolution.Size = new System.Drawing.Size(75, 23);
+            this.plusSolution.TabIndex = 7;
+            this.plusSolution.Text = "+";
+            this.plusSolution.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonMin
+            // minSolution
             // 
-            this.ButtonMin.Location = new System.Drawing.Point(309, 114);
-            this.ButtonMin.Name = "ButtonMin";
-            this.ButtonMin.Size = new System.Drawing.Size(75, 23);
-            this.ButtonMin.TabIndex = 3;
-            this.ButtonMin.Text = "-";
-            this.ButtonMin.UseVisualStyleBackColor = true;
-            this.ButtonMin.Click += new System.EventHandler(this.ClickMain);
+            this.minSolution.Location = new System.Drawing.Point(276, 114);
+            this.minSolution.Name = "minSolution";
+            this.minSolution.Size = new System.Drawing.Size(75, 23);
+            this.minSolution.TabIndex = 3;
+            this.minSolution.Text = "-";
+            this.minSolution.UseVisualStyleBackColor = true;
+            this.minSolution.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonDel
+            // delSolution
             // 
-            this.ButtonDel.Location = new System.Drawing.Point(309, 85);
-            this.ButtonDel.Name = "ButtonDel";
-            this.ButtonDel.Size = new System.Drawing.Size(75, 23);
-            this.ButtonDel.TabIndex = 4;
-            this.ButtonDel.Text = "/";
-            this.ButtonDel.UseVisualStyleBackColor = true;
-            this.ButtonDel.Click += new System.EventHandler(this.ClickMain);
+            this.delSolution.Location = new System.Drawing.Point(276, 85);
+            this.delSolution.Name = "delSolution";
+            this.delSolution.Size = new System.Drawing.Size(75, 23);
+            this.delSolution.TabIndex = 4;
+            this.delSolution.Text = "/";
+            this.delSolution.UseVisualStyleBackColor = true;
+            this.delSolution.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonUmn
+            // multiSolution
             // 
-            this.ButtonUmn.Location = new System.Drawing.Point(309, 56);
-            this.ButtonUmn.Name = "ButtonUmn";
-            this.ButtonUmn.Size = new System.Drawing.Size(75, 23);
-            this.ButtonUmn.TabIndex = 5;
-            this.ButtonUmn.Text = "*";
-            this.ButtonUmn.UseVisualStyleBackColor = true;
-            this.ButtonUmn.Click += new System.EventHandler(this.ClickMain);
+            this.multiSolution.Location = new System.Drawing.Point(276, 56);
+            this.multiSolution.Name = "multiSolution";
+            this.multiSolution.Size = new System.Drawing.Size(75, 23);
+            this.multiSolution.TabIndex = 5;
+            this.multiSolution.Text = "*";
+            this.multiSolution.UseVisualStyleBackColor = true;
+            this.multiSolution.Click += new System.EventHandler(this.ClickMain);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(138, 12);
+            this.textBox3.Location = new System.Drawing.Point(138, 56);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
             // 
-            // radical
+            // radicalSolution
             // 
-            this.radical.Location = new System.Drawing.Point(138, 210);
-            this.radical.Name = "radical";
-            this.radical.Size = new System.Drawing.Size(75, 23);
-            this.radical.TabIndex = 8;
-            this.radical.Text = "Sqrt";
-            this.radical.UseVisualStyleBackColor = true;
-            this.radical.Click += new System.EventHandler(this.ClickMainOne);
+            this.radicalSolution.Location = new System.Drawing.Point(138, 210);
+            this.radicalSolution.Name = "radicalSolution";
+            this.radicalSolution.Size = new System.Drawing.Size(75, 23);
+            this.radicalSolution.TabIndex = 8;
+            this.radicalSolution.Text = "Sqrt";
+            this.radicalSolution.UseVisualStyleBackColor = true;
+            this.radicalSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
             // textBox4
             // 
@@ -123,84 +122,84 @@
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 9;
             // 
-            // ButtonDegree
+            // degreeSolution
             // 
-            this.ButtonDegree.Location = new System.Drawing.Point(402, 27);
-            this.ButtonDegree.Name = "ButtonDegree";
-            this.ButtonDegree.Size = new System.Drawing.Size(75, 23);
-            this.ButtonDegree.TabIndex = 10;
-            this.ButtonDegree.Text = "^";
-            this.ButtonDegree.UseVisualStyleBackColor = true;
-            this.ButtonDegree.Click += new System.EventHandler(this.ClickMain);
+            this.degreeSolution.Location = new System.Drawing.Point(369, 27);
+            this.degreeSolution.Name = "degreeSolution";
+            this.degreeSolution.Size = new System.Drawing.Size(75, 23);
+            this.degreeSolution.TabIndex = 10;
+            this.degreeSolution.Text = "^";
+            this.degreeSolution.UseVisualStyleBackColor = true;
+            this.degreeSolution.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonDegreeFraction
+            // degreeFraction
             // 
-            this.ButtonDegreeFraction.Location = new System.Drawing.Point(402, 56);
-            this.ButtonDegreeFraction.Name = "ButtonDegreeFraction";
-            this.ButtonDegreeFraction.Size = new System.Drawing.Size(75, 23);
-            this.ButtonDegreeFraction.TabIndex = 11;
-            this.ButtonDegreeFraction.Text = "^1/y";
-            this.ButtonDegreeFraction.UseVisualStyleBackColor = true;
-            this.ButtonDegreeFraction.Click += new System.EventHandler(this.ClickMain);
+            this.degreeFraction.Location = new System.Drawing.Point(369, 56);
+            this.degreeFraction.Name = "degreeFraction";
+            this.degreeFraction.Size = new System.Drawing.Size(75, 23);
+            this.degreeFraction.TabIndex = 11;
+            this.degreeFraction.Text = "^1/y";
+            this.degreeFraction.UseVisualStyleBackColor = true;
+            this.degreeFraction.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonLog
+            // logSolution
             // 
-            this.ButtonLog.Location = new System.Drawing.Point(402, 85);
-            this.ButtonLog.Name = "ButtonLog";
-            this.ButtonLog.Size = new System.Drawing.Size(75, 23);
-            this.ButtonLog.TabIndex = 12;
-            this.ButtonLog.Text = "logx(y)";
-            this.ButtonLog.UseVisualStyleBackColor = true;
-            this.ButtonLog.Click += new System.EventHandler(this.ClickMain);
+            this.logSolution.Location = new System.Drawing.Point(369, 85);
+            this.logSolution.Name = "logSolution";
+            this.logSolution.Size = new System.Drawing.Size(75, 23);
+            this.logSolution.TabIndex = 12;
+            this.logSolution.Text = "logx(y)";
+            this.logSolution.UseVisualStyleBackColor = true;
+            this.logSolution.Click += new System.EventHandler(this.ClickMain);
             // 
-            // ButtonSin
+            // sinSolution
             // 
-            this.ButtonSin.Location = new System.Drawing.Point(233, 210);
-            this.ButtonSin.Name = "ButtonSin";
-            this.ButtonSin.Size = new System.Drawing.Size(75, 23);
-            this.ButtonSin.TabIndex = 13;
-            this.ButtonSin.Text = "arcsin(x)";
-            this.ButtonSin.UseVisualStyleBackColor = true;
-            this.ButtonSin.Click += new System.EventHandler(this.ClickMainOne);
+            this.sinSolution.Location = new System.Drawing.Point(233, 210);
+            this.sinSolution.Name = "sinSolution";
+            this.sinSolution.Size = new System.Drawing.Size(75, 23);
+            this.sinSolution.TabIndex = 13;
+            this.sinSolution.Text = "sin(x)";
+            this.sinSolution.UseVisualStyleBackColor = true;
+            this.sinSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
-            // ButtonCos
+            // cosSolution
             // 
-            this.ButtonCos.Location = new System.Drawing.Point(324, 210);
-            this.ButtonCos.Name = "ButtonCos";
-            this.ButtonCos.Size = new System.Drawing.Size(75, 23);
-            this.ButtonCos.TabIndex = 14;
-            this.ButtonCos.Text = "arccos(x)";
-            this.ButtonCos.UseVisualStyleBackColor = true;
-            this.ButtonCos.Click += new System.EventHandler(this.ClickMainOne);
+            this.cosSolution.Location = new System.Drawing.Point(324, 210);
+            this.cosSolution.Name = "cosSolution";
+            this.cosSolution.Size = new System.Drawing.Size(75, 23);
+            this.cosSolution.TabIndex = 14;
+            this.cosSolution.Text = "cos(x)";
+            this.cosSolution.UseVisualStyleBackColor = true;
+            this.cosSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
-            // ButtonTan
+            // tanSolution
             // 
-            this.ButtonTan.Location = new System.Drawing.Point(411, 210);
-            this.ButtonTan.Name = "ButtonTan";
-            this.ButtonTan.Size = new System.Drawing.Size(75, 23);
-            this.ButtonTan.TabIndex = 15;
-            this.ButtonTan.Text = "arctan(x)";
-            this.ButtonTan.UseVisualStyleBackColor = true;
-            this.ButtonTan.Click += new System.EventHandler(this.ClickMainOne);
+            this.tanSolution.Location = new System.Drawing.Point(411, 210);
+            this.tanSolution.Name = "tanSolution";
+            this.tanSolution.Size = new System.Drawing.Size(75, 23);
+            this.tanSolution.TabIndex = 15;
+            this.tanSolution.Text = "tan(x)";
+            this.tanSolution.UseVisualStyleBackColor = true;
+            this.tanSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 298);
-            this.Controls.Add(this.ButtonTan);
-            this.Controls.Add(this.ButtonCos);
-            this.Controls.Add(this.ButtonSin);
-            this.Controls.Add(this.ButtonLog);
-            this.Controls.Add(this.ButtonDegreeFraction);
-            this.Controls.Add(this.ButtonDegree);
+            this.ClientSize = new System.Drawing.Size(495, 252);
+            this.Controls.Add(this.tanSolution);
+            this.Controls.Add(this.cosSolution);
+            this.Controls.Add(this.sinSolution);
+            this.Controls.Add(this.logSolution);
+            this.Controls.Add(this.degreeFraction);
+            this.Controls.Add(this.degreeSolution);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.radical);
+            this.Controls.Add(this.radicalSolution);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.ButtonUmn);
-            this.Controls.Add(this.ButtonDel);
-            this.Controls.Add(this.ButtonMin);
-            this.Controls.Add(this.ButtonPlus);
+            this.Controls.Add(this.multiSolution);
+            this.Controls.Add(this.delSolution);
+            this.Controls.Add(this.minSolution);
+            this.Controls.Add(this.plusSolution);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
@@ -215,19 +214,19 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button ButtonPlus;
-        private System.Windows.Forms.Button ButtonMin;
-        private System.Windows.Forms.Button ButtonDel;
-        private System.Windows.Forms.Button ButtonUmn;
+        private System.Windows.Forms.Button plusSolution;
+        private System.Windows.Forms.Button minSolution;
+        private System.Windows.Forms.Button delSolution;
+        private System.Windows.Forms.Button multiSolution;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button radical;
+        private System.Windows.Forms.Button radicalSolution;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button ButtonDegree;
-        private System.Windows.Forms.Button ButtonDegreeFraction;
-        private System.Windows.Forms.Button ButtonLog;
-        private System.Windows.Forms.Button ButtonSin;
-        private System.Windows.Forms.Button ButtonCos;
-        private System.Windows.Forms.Button ButtonTan;
+        private System.Windows.Forms.Button degreeSolution;
+        private System.Windows.Forms.Button degreeFraction;
+        private System.Windows.Forms.Button logSolution;
+        private System.Windows.Forms.Button sinSolution;
+        private System.Windows.Forms.Button cosSolution;
+        private System.Windows.Forms.Button tanSolution;
     }
 }
 
