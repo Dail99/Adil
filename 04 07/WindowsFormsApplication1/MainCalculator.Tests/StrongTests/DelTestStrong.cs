@@ -8,7 +8,7 @@ namespace MainCalculator.Tests.TwoArgumentTest
     public class DelTestStrong
 
     {
-    [TestCase(7, 7, 1)]
+    [TestCase(7, 0, 1)]
     [TestCase(8, 4, 2)]
     [TestCase(14, -7, -2)]
     public void CalculateDelTestStrong(double firstValue, double secondValue, double expected)

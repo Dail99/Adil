@@ -4,7 +4,14 @@ namespace MainCalculator
 {
     public class Tan : IOneArgumentCalculator
     {
-       public double  Calculate(double thirdArgument)
+        /// <summary>
+        /// Tangent count
+        /// </summary>
+        /// <param name="thirdArgument"></param>
+        /// <returns>
+        /// thirdArgument
+        /// </returns>
+        public double  Calculate(double thirdArgument)
        {
            return Math.Tan(thirdArgument);
        }

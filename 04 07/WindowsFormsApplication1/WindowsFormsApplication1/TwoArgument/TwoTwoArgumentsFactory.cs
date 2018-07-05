@@ -4,6 +4,13 @@ namespace MainCalculator
 {
     public class TwoTwoArgumentsFactory
     {
+        /// <summary>
+        /// Method based on name button
+        /// </summary>
+        /// <param name="calculatorname"></param>
+        /// <returns>
+        /// calculatorname
+        /// </returns>
         public static ITwoArgumentCalculator CreateCalculator(string calculatorname)
         {
             switch(calculatorname)
