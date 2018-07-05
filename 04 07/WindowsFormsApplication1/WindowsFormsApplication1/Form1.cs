@@ -11,13 +11,20 @@ namespace MainCalculator
         }
         private void ClickMain(object sender, EventArgs e)
         {
-            string firstValueText = textBox1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = textBox3.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
-            ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(firstValue, secondValue);
-            textBox2.Text = result.ToString();
+            try
+            {
+                string firstValueText = textBox1.Text;
+                double firstValue = Convert.ToDouble(firstValueText);
+                string secondValueText = textBox3.Text;
+                double secondValue = Convert.ToDouble(secondValueText);
+                ITwoArgumentCalculator calculator = TwoTwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(firstValue, secondValue);
+                textBox2.Text = result.ToString();
+            }
+            catch (Exception TwoArgumentsException)
+            {
+                MessageBox.Show("На 0 делить нельзя");
+            }
         }
 
         private void ClickMainOne(object sender, EventArgs e)

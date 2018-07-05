@@ -47,21 +47,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Location = new System.Drawing.Point(12, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(76, 56);
+            this.textBox2.Location = new System.Drawing.Point(84, 88);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
             // 
             // plusSolution
             // 
-            this.plusSolution.Location = new System.Drawing.Point(309, 27);
+            this.plusSolution.Location = new System.Drawing.Point(276, 27);
             this.plusSolution.Name = "plusSolution";
             this.plusSolution.Size = new System.Drawing.Size(75, 23);
             this.plusSolution.TabIndex = 7;
@@ -70,7 +70,7 @@
             // 
             // minSolution
             // 
-            this.minSolution.Location = new System.Drawing.Point(309, 114);
+            this.minSolution.Location = new System.Drawing.Point(276, 114);
             this.minSolution.Name = "minSolution";
             this.minSolution.Size = new System.Drawing.Size(75, 23);
             this.minSolution.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // delSolution
             // 
-            this.delSolution.Location = new System.Drawing.Point(309, 85);
+            this.delSolution.Location = new System.Drawing.Point(276, 85);
             this.delSolution.Name = "delSolution";
             this.delSolution.Size = new System.Drawing.Size(75, 23);
             this.delSolution.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // multiSolution
             // 
-            this.multiSolution.Location = new System.Drawing.Point(309, 56);
+            this.multiSolution.Location = new System.Drawing.Point(276, 56);
             this.multiSolution.Name = "multiSolution";
             this.multiSolution.Size = new System.Drawing.Size(75, 23);
             this.multiSolution.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(138, 12);
+            this.textBox3.Location = new System.Drawing.Point(138, 56);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             // degreeSolution
             // 
-            this.degreeSolution.Location = new System.Drawing.Point(402, 27);
+            this.degreeSolution.Location = new System.Drawing.Point(369, 27);
             this.degreeSolution.Name = "degreeSolution";
             this.degreeSolution.Size = new System.Drawing.Size(75, 23);
             this.degreeSolution.TabIndex = 10;
@@ -134,7 +134,7 @@
             // 
             // degreeFraction
             // 
-            this.degreeFraction.Location = new System.Drawing.Point(402, 56);
+            this.degreeFraction.Location = new System.Drawing.Point(369, 56);
             this.degreeFraction.Name = "degreeFraction";
             this.degreeFraction.Size = new System.Drawing.Size(75, 23);
             this.degreeFraction.TabIndex = 11;
@@ -144,7 +144,7 @@
             // 
             // logSolution
             // 
-            this.logSolution.Location = new System.Drawing.Point(402, 85);
+            this.logSolution.Location = new System.Drawing.Point(369, 85);
             this.logSolution.Name = "logSolution";
             this.logSolution.Size = new System.Drawing.Size(75, 23);
             this.logSolution.TabIndex = 12;
@@ -158,7 +158,7 @@
             this.sinSolution.Name = "sinSolution";
             this.sinSolution.Size = new System.Drawing.Size(75, 23);
             this.sinSolution.TabIndex = 13;
-            this.sinSolution.Text = "arcsin(x)";
+            this.sinSolution.Text = "sin(x)";
             this.sinSolution.UseVisualStyleBackColor = true;
             this.sinSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
@@ -168,7 +168,7 @@
             this.cosSolution.Name = "cosSolution";
             this.cosSolution.Size = new System.Drawing.Size(75, 23);
             this.cosSolution.TabIndex = 14;
-            this.cosSolution.Text = "arccos(x)";
+            this.cosSolution.Text = "cos(x)";
             this.cosSolution.UseVisualStyleBackColor = true;
             this.cosSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
@@ -178,7 +178,7 @@
             this.tanSolution.Name = "tanSolution";
             this.tanSolution.Size = new System.Drawing.Size(75, 23);
             this.tanSolution.TabIndex = 15;
-            this.tanSolution.Text = "arctan(x)";
+            this.tanSolution.Text = "tan(x)";
             this.tanSolution.UseVisualStyleBackColor = true;
             this.tanSolution.Click += new System.EventHandler(this.ClickMainOne);
             // 
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 298);
+            this.ClientSize = new System.Drawing.Size(495, 252);
             this.Controls.Add(this.tanSolution);
             this.Controls.Add(this.cosSolution);
             this.Controls.Add(this.sinSolution);
